@@ -1,0 +1,102 @@
+/* Base styles */
+.touch-container {
+    background-image: url('../../media/stad5.jpg');
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.title-touch {
+    margin: 9rem auto;
+    display: block;
+    text-align: center;
+}
+
+.touch-buttom {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    transition: all 0.2s ease-in-out;
+}
+
+.touch-buttom:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.title-touch h2 {
+    font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 59px;
+    color: #FFFFFF !important;
+    line-height: 1.3em;
+    text-align: center;
+}
+
+.touch-buttom button {
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0.3em 1em;
+    line-height: 1.7em !important;
+    background-color: transparent;
+    background-size: cover;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border: 2px solid;
+    border-radius: 3px;
+    color: #ffffff !important;
+    font-family: 'Oswald', Helvetica, Arial, Lucida, sans-serif !important;
+    text-transform: uppercase !important;
+}
+
+.touch-buttom button:active {
+    transform: translate(0, 2px);
+    background-color: #666666;
+    box-shadow: 0 2px 0 #444444;
+}
+
+/* Media queries for 768px screen width */
+@media (max-width: 768px) {
+    .touch-buttom {
+        width: 70%;
+    }
+
+    .title-touch h2 {
+        font-size: 40px;
+        line-height: 1.2em;
+    }
+
+    .touch-buttom button {
+        font-size: 16px;
+        line-height: 1.5em;
+        padding: 0.2em 0.8em;
+    }
+}
+
+/* Media queries for 480px screen width */
+@media (max-width: 480px) {
+    .touch-buttom {
+        width: 90%;
+    }
+
+    .title-touch h2 {
+        font-size: 30px;
+        line-height: 1.1em;
+    }
+
+    .touch-buttom button {
+        font-size: 14px;
+        line-height: 1.4em;
+        padding: 0.1em 0.5em;
+    }
+}

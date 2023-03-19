@@ -1,0 +1,190 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4!important;
+}
+
+.about-inf {
+    display: flex;
+    margin-top: 5rem;
+   
+}
+
+.vision-profile-text {
+    display: flex;
+    flex-direction: column;
+   
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4rem;
+}
+
+.image {
+    width: 300%;
+    
+    
+
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* object-position: 0.5% left ; */
+    
+    
+
+}
+
+.vision-profile {
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.about-us-card-container {
+    display: flex;
+    
+    padding: 2rem;
+
+}
+
+.about-us-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px #ccc;
+    margin: 1rem;
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+
+.about-us-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+
+}
+
+.vision-profile-text p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    text-align: justify;
+    color: #666;
+    display: block;
+    line-height: 1.9em;
+    padding: 1.5rem;
+
+}
+
+.vision-profile-text h2{
+    font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 59px;
+    line-height: 1.3em;
+}
+/* revisar esto que en cada seccion hago algo distinto para poder colocarlo bien */
+.title-underline-about {
+    border-bottom: 5px solid rgb(216, 153, 35);
+    width: 50%;
+    padding-bottom: 5px;
+    max-width: 150px;
+    margin-bottom: 4rem;
+    margin: auto;
+    display: block;
+}
+
+
+.title h2{
+    font-family: 'Oswald',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 59px;
+    line-height: 1.3em;
+    text-align: center;
+}
+
+.vision-profile-text .title-vision {
+    line-height: 1.4em;
+    font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
+    font-size: 21px;
+    line-height: 1.4em;
+    color: #1a1a1a!important;
+}
+
+
+
+
+/* For devices with a maximum width of 992px */
+@media only screen and (max-width: 992px) {
+    .about-container {
+      padding: 10px;
+    }
+    .about-inf {
+      flex-direction: column;
+    }
+    .vision-profile {
+      margin-bottom: 2rem;
+    }
+    .image {
+      width: 100%;
+    }
+    .about-us-card {
+      width: 100%;
+    }
+  }
+  
+  /* For devices with a maximum width of 768px */
+  @media only screen and (max-width: 768px) {
+    .vision-profile-text h2 {
+      font-size: 40px;
+    }
+    .vision-profile-text p {
+      font-size: 14px;
+    }
+    .about-us-card {
+      padding: 10px;
+      margin: 0.5rem 0;
+    }
+    .about-us-card-container {
+      flex-direction: column;
+    }
+  }
+  
+  /* For devices with a maximum width of 480px */
+  @media only screen and (max-width: 480px) {
+    .vision-profile-text h2 {
+      font-size: 10px;
+    }
+    .vision-profile-text p {
+      font-size: 12px;
+      padding: 1rem 0.5rem;
+    }
+    .about-us-card {
+      font-size: 14px;
+      width: 100%;
+    }
+    .about-us-image {
+      width: 150px;
+      height: 150px;
+    }
+    .title h2 {
+      font-size: 40px;
+    }
+    .title-underline-about {
+      width: 30%;
+    }
+  }
+  

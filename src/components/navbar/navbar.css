@@ -1,0 +1,304 @@
+.navbar {
+   
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 20px 40px;
+    z-index: 1000;
+    background-color: transparent;
+    transition: background-color 0.5s ease;
+    height: 80px;
+}
+
+.scrolled {
+    background-color: #f4f4f4;
+    border-bottom: solid 1px rgb(146, 144, 144);
+
+}
+
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: green 3px solid;
+}
+
+.navbar-logo-link {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    border: rgb(126, 0, 128) 3px solid;
+    
+
+}
+
+.navbar-logo {
+    display: flex;
+    height: 70px;
+    margin-right: 20px;
+    cursor: pointer;
+    border: rgb(9, 0, 128) 3px solid;
+}
+
+
+.brand {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    border: rgb(229, 207, 59) 3px solid;
+   
+
+}
+
+.brand-img {
+height: 70px;
+    width: 250px;
+    margin-right: 20px;
+    border: rgb(88, 170, 208) 3px solid;
+    object-fit: cover;
+}
+
+/* Hamburger menu button styles */
+
+.hamburger-menu-button {
+    background: transparent;
+    border: none;
+    position: relative;
+    cursor: pointer;
+    display: none;
+    height: 18px;
+    width: 14px;
+    z-index: 100;
+
+}
+
+.hamburger-menu-button:focus {
+    outline: none;
+}
+
+.hamburger-menu-button i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 18px;
+    height: 2px;
+    background-color: #000;
+    transition: transform 0.2s ease-in-out;
+}
+
+.hamburger-menu-button i:before,
+.hamburger-menu-button i:after {
+    content: "";
+    display: block;
+    width: inherit;
+    height: inherit;
+    background-color: #000;
+    position: absolute;
+    transition: transform 0.2s ease-in-out;
+}
+
+.hamburger-menu-button i:before {
+    top: -6px;
+}
+
+.hamburger-menu-button i:after {
+    top: 6px;
+}
+
+.fas {
+    color: #ffffff;
+    font-size: 22px;
+}
+
+
+
+/* Navbar links styles */
+
+
+.navbar-links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    border: red solid 2px;
+   
+    
+    
+    
+    
+}
+
+.navbar-container .navbar-links {
+    align-items: center;
+    display: flex;
+    object-fit: contain;
+    font-size: 1rem;
+    font-weight: 300;
+    font-style: normal;
+    letter-spacing: normal;
+    font-family: 'Roboto', Helvetica, Arial, Lucida, sans-serif;
+   
+   
+    
+
+}
+
+.navbar-container li {
+    margin: 0 1rem;
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+}
+
+.navbar-links li a:hover {
+    border-bottom: 3px solid #ebeb27;
+    padding-bottom: 12px;
+}
+
+.navbar-links li .active {
+    border-bottom: 3px solid #ebeb27;
+    padding-bottom: 12px;
+}
+
+.scrolled .navbar-links a {
+    color: #666;
+    ;
+
+}
+
+.scrolled .navbar-book-btn {
+    display: block;
+}
+
+.navbar-links-item {
+    margin: 0 20px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #000000;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    
+}
+
+
+
+/* Responsive styles */
+
+@media only screen and (max-width: 992px) {
+
+    .navbar {
+        padding: 20px 20px;
+        position: absolute;
+
+    }
+
+    .navbar-container {
+        max-width: none;
+    }
+
+    .navbar-links a {
+        display: block;
+    }
+
+    .navbar-logo {
+        margin-left: 0;
+    }
+
+    .navbar-brand {
+        display: none;
+    }
+
+    .hamburger-menu-button {
+        display: block;
+        position: absolute;
+        right: 20px;
+    }
+
+    .navbar-links {
+        position: absolute;
+        top: 0;
+        right: -100%;
+        width: 100%;
+        height: 100vh;
+        background-color: #b3a9a9;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 99;
+        transition: all 0.5s ease;
+        margin: auto 0;
+        color: #fff;
+    }
+
+    .navbar-links.active {
+        right: 0;
+    }
+
+    .navbar-links li {
+        margin: 1rem 0;
+        transition: opacity 0.2s ease;
+        opacity: 0;
+    }
+
+    .navbar-links.active li {
+        opacity: 1;
+        transition-delay: 0.5s;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .navbar-container .navbar-links {
+        font-size: 0.9rem;
+        margin-left: .5rem;
+
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+    .navbar {
+        border: red solid 2px;
+        padding: 10px 20px;
+        position: absolute;
+
+    }
+
+
+    .navbar-container {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .navbar-links li {
+        margin: 0;
+    }
+
+    .navbar-links a {
+        display: block;
+        padding: 1rem;
+    }
+
+    .navbar-logo {
+        height: 35px;
+        margin: 0;
+        cursor: pointer;
+    }
+
+
+}
